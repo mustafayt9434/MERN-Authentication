@@ -1,0 +1,21 @@
+### GET request to example server
+GET localhost:3001/api/v1/user
+
+### POST request to signup user
+POST localhost:3001/api/v1/user/signup
+Content-Type: application/json
+
+{
+  "name": "testuser",
+  "email": "test@example.com",
+  "password": "securepassword"
+}
+
+### POST request to login user
+POST localhost:3001/api/v1/user/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "securepassword"
+}
